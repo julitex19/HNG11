@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Tech Journey</h1>
+        <div id="hamburger">☰</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Welcome to My Tech Journey</h2>
+        <p>Hi, I'm <span data-testid="slackDisplayName">Juliet Samuel</span></p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>Who I am</h2>
+        <div class="about">
+            <div class="intro">
+                <p>I've built products for companies and businesses ranging from small to large-scale and enterprise-level applications with focus on fast, elegant and accessible user experiences. I am dedicated to continuous learning and improvement, staying updated with the latest trends and advancements in the tech industry to deliver superior results.</p>
+                <p>I'm a detail-oriented and efficient problem solver with a strong interest in the entire frontend development spectrum. My expertise lies in HTML, CSS, JavaScript, React, Tailwind CSS, Next.js, and TypeScript. I specialize in building small to medium web applications and coding interactive layouts.</p>
+            </div>
+            <img src="./images/julie340.jpeg" alt="Profile Picture" data-testid="slackProfilePicture" width="340" height="340"/>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <div id="goal">
+        <div id="goals">
+            <h2>My Tech Goals for the Next 2 Years</h2>
+            <ul>
+                <li>Secure a full-time position in a reputable tech company.</li>
+                <li>Specialize in a specific technology such as React.js or Node.js.</li>
+                <li>Build a strong portfolio showcasing my projects and skills.</li>
+                <li>Learn advanced topics like machine learning and cloud computing.</li>
+                <li>Obtain relevant certifications (e.g., AWS, Azure).</li>
+                <li>Contribute to open-source projects.</li>
+                <li>Improve soft skills such as communication and teamwork.</li>
+                <li>Master full-stack development to broaden my skill set.</li>
+            </ul>
+        </div>
+
+        <!-- Current Time and Day Section -->
+        <div id="current-time">
+            <h2>Current Time and Day</h2>
+            <p>Current Time (UTC): <span data-testid="currentTimeUTC" id="currentTimeUTC"></span></p>
+            <p>Current Day: <span data-testid="currentDay" id="currentDay"></span></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>
+            Email: 
+            <a href="mailto:julitex19@gmail.com" data-testid="slackEmail">
+              julitex19@gmail.com
+            </a>
+          </p>
+          
+        <ul class="footer">
+            <li><a href="https://hng.tech/learn" data-testid="hngLink">HNG Internship</a></li>
+            <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
+            <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

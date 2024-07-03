@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 4rem 8rem;
+}
+
+section img {
+    padding: 0 !important;
+    border-radius: 50%;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro {
+    width: 650px;
+}
+
+#hero {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#goal{
+    display: flex;
+    justify-items: space-between;
+    padding: 4rem 8rem;
+    gap: 160px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        height: calc(100vh - 60px);
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    section img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    #goal{
+        display: block;
+        justify-items: left;
+        padding: 4rem 2rem;
+        gap: 20px;
+    }
+
+    #goal h2{
+        font-size: 20px;
+    }
+
+    footer ul {
+        gap: 14px;
+    }
+}
